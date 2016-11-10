@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+
+    <script>
+        var color;
+        function setup() {
+            createCanvas(500, 500);
+            color = 0;
+        }
+
+        function draw() {
+            colorMode(HSB, 360, 100, 100);
+            fill(color, 255, 255);
+            color++;
+            color %= 360;
+            ellipse(mouseX, mouseY, 100, 100);
+        
+        }
+         var color;
+        function setup() {
+            createCanvas(500, 500);
+            color = 0;
+        }
+
+        function mouseDragged() {
+            colorMode(HSB, 360, 100, 100);
+            fill(color, 255, 255);
+            color++;
+            color %= 360;
+            rect(mouseX, mouseY, 100, 100);
+        }
+         var color;
+        function setup() {
+            createCanvas(500, 500);
+            color = 0;
+        }
+
+        function keyPressed() {
+            colorMode(HSB, 360, 100, 100);
+            fill(color, 255, 255);
+            color++;
+            color %= 360;
+            line(0, 0, mouseX, mouseY);
+        }
+        
+
+
+                //function mouseMoved() {
+                // fill(random(225), random(225), random(225));
+                //  ellipse(mouseX-random(-25,25),mouseY-random(-25,25),10)
+
+                // function mouseDragged() {
+                //    fill(255,0,0)
+                //   ell(mouseX-random(-25,25),mouseY-random(-25,25),20)
+
+                // }
+
+                // fuction mouseMoved() {
+
+                // triangle(mouseY-random(+), mouseX- randoom(+),10)
+
+
+
+
+
+
+                // }
+                // function keyPressed(){
+                // background(255)
+                // }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/briannaramos20/p5js/blob/gh-pages/FILENAME.html?footer=0"></script>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
